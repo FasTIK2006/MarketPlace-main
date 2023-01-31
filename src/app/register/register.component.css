@@ -1,0 +1,34 @@
+.con{
+    padding-top: 100px;
+    padding-left: 0%;
+}
+.but{
+    border-radius:1.3em ;
+    background-color: gray;
+    color: white;
+    width: 200px;
+    height: 55px;
+    
+
+}
+.ht{
+    height: 100%;
+    width: 100%;
+
+}
+.but1{
+    padding-left: 43.5%;
+    padding-top: 100px;
+
+}
+.col{
+    width: 10%;
+}
+.reg{
+    padding-left: 44%;
+    padding-bottom: 70px;
+}
+.des{
+    border-radius: 0.7em;
+    border-color: rgb(0, 0, 0);
+}

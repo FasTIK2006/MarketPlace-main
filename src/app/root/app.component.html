@@ -1,0 +1,44 @@
+<body>
+  <div>
+    <nav class="fixed-top navbar navbar-expand-xl navbar-primary bg-success">
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <h1>Marketplace</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ol class="navbar-nav me-auto me-2">
+            <li class="nav-item">
+              <a class="ab" routerLink="/" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="ab" routerLink="/cart" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }">Корзина</a>
+            </li>
+            <li class="nav-item">
+              <a class="ab " *ngIf="!authService.isLoggedIn()" routerLink="/login" routerLinkActive="active-link">Вход</a>
+            </li>
+            <li class="nav-item">
+              <a class="ab " mat-button *ngIf="!authService.isLoggedIn()" routerLink="/register" routerLinkActive="active-link">Регистрация</a>
+            </li>
+            <div class="c">
+            <li class="nav-item">
+              <a class="ab" *ngIf="authService.isLoggedIn()" routerLink="/profile" routerLinkActive="active-link"> Профиль </a>
+            </li>
+          </div>
+          <app-logout>  </app-logout>
+          </ol>
+
+
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+
+  </div>
+  

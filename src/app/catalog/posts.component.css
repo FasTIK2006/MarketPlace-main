@@ -1,0 +1,40 @@
+
+.con{
+    padding-top: 150px;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 450px 450px 450px 450px;
+    
+}
+.карточка{
+    width: 350px;
+    padding-left: 10%;
+    
+    
+    
+
+    
+}
+.abc{
+    padding-left: 50%;
+    
+
+}
+.con1{
+    padding-bottom:300px;
+    padding-top: 100px;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 450px 450px 450px 450px;
+    
+    
+}
+.items-center{
+    background-color: rgb(242,245,249);
+}
+.img{
+    padding: 1% 5% 7% 8%;
+}
+.footer{
+    margin-top:  100px;
+}
